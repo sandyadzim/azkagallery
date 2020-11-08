@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Poppins Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Poppins Regular'),
+    url(../fonts/Poppins-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Poppins Italic'), url(../fonts/Poppins-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Poppins Medium'), url(../fonts/Poppins-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Poppins Bold'), url('../fonts/Poppins-Bold.woff') format('woff');
+}
+body {
+  font-family: 'Poppins Regular' !important;
+}
+h3,
+h4 {
+  font-family: 'Poppins Bold';
+}
+.a-custom {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.a-custom:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a-custom:hover:after {
+  width: 100%;
+  left: 0;
+}
+.a-custom-black {
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  color: #000;
+  font-family: 'Poppins Medium';
+}
+.a-custom-black:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #1b262c;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a-custom-black:hover:after {
+  width: 100%;
+  left: 0;
+}
+.a-custom-black:hover {
+  color: #000;
+}
+.cont-custom {
+  min-height: 80vh;
+}
+.b-icon.bi {
+  color: #fff !important;
+}
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+[type='text'].form-control:focus,
+[type='password'].form-control:focus,
+[type='email'].form-control:focus,
+[type='tel'].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.swiper-pagination {
+  position: initial !important;
+}
+.swiper-pagination-bullet-active {
+  background: #f14436 !important;
+}
+.item {
+  /* height: 224px;
+  width: 125px; */
+  flex-shrink: 1;
+}
+.list {
+  display: flex;
+  overflow-x: auto;
+  list-style: none;
+  border: 5px solid #fff;
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 12px;
+}
+.txt-see-more {
+  color: #000;
+}
+.txt-see-more:hover {
+  color: #000;
+}
+.txt-see-more-2 {
+  color: #fff;
+  text-decoration: none;
+}
+.txt-see-more-2:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.bg-breadcrumb {
+  background-color: #f14436;
+}
+.breadcrumb-item a {
+  color: #fff !important;
+  text-decoration: none;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #fff !important;
+  content: '/';
+}
+.breadcrumb-item.active {
+  color: #fff !important;
+  font-family: 'Poppins Bold';
+}
